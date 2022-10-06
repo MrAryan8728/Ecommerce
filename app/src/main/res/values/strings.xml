@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ecommerce app</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already Have an Account ?</string>
+</resources>
