@@ -1,4 +1,4 @@
-package com.example.ecommerceapp;
+package com.example.ecommerceapp.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.ecommerceapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -51,7 +52,7 @@ public class loginActivity extends AppCompatActivity {
                 if(task.isSuccessful())
                 {
                     Toast.makeText(loginActivity.this,"Login Successful",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(loginActivity.this,MainActivity.class));
+                    startActivity(new Intent(loginActivity.this, MainActivity.class));
                 }
                 else
                 {
@@ -63,6 +64,6 @@ public class loginActivity extends AppCompatActivity {
     }
 
     public void signup(View view) {
-        startActivity(new Intent(loginActivity.this,RegisterActivity.class));
+        startActivity(new Intent(loginActivity.this, RegisterActivity.class));
     }
 }
